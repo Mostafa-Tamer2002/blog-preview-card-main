@@ -1,0 +1,121 @@
+/* !Import */
+@font-face {
+    font-family:'figtreeEB' ;
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family:'figtreeSB';
+    src: url(./assets/fonts/static/Figtree-SemiBold.ttf);
+    font-weight: 500;
+}
+/* !Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* !Global Content */
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    ---Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+body{
+    background-color: var(--Yellow);
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-family:'figtreeEB' ;
+}
+/* !Body Content */
+/* ?==========Start-Main==========*/
+main .container{
+    background-color: var(--White);
+    border: 0.1em solid var(--Gray-950);
+    border-radius: 1em;
+    padding-block: 1em;
+    box-shadow: 0.5em 0.5em 0.1em 0.1em black;
+}
+/* ====Header-content==== */
+header img{
+    border-radius: 1em ;
+}
+header p:first-of-type{
+    background-color: var(--Yellow);
+    font-family:'figtreeEB' ;
+    width: fit-content;
+    padding: 0.1em 0.8em;
+    margin:0.7em 0em;
+    border-radius: 0.2em;
+}
+header p:last-of-type{
+    font-family:'figtreeSB' ;
+    color: var(--Gray-950);
+}
+
+/*====Description-Section====*/
+section#description p{
+    color: var(---Gray-500);
+    font-family:'figtreeSB';
+}
+
+/* ====Footer==== */
+footer{
+    margin-top: 1.5em;
+}
+footer img{
+    width: 10%;
+    vertical-align: middle;
+}
+footer span{
+    font-family:'figtreeEB';
+    margin-left: 0.7em;
+}
+
+
+/* !Media Query */
+/* Mobile: 320px - 480px */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 340px;     
+}
+}
+
+/* Tablet: 768px - 1024px */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 340px;     
+    }
+}
+
+/* Desktop: 1200px - 1440px */
+@media only screen and (min-width:992px ) {
+    .container {
+        width: 340px;     
+    }
+}
+
+/* Large Desktop: 1600px and above */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 340px;     
+    } 
+}
